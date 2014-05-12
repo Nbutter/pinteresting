@@ -41,10 +41,7 @@ group :production do
 	gem 'rails_12factor'
 end
 
-#bundle exec rake doc:rails makes an API under doc/api
-group :doc do
-	gem 'sdoc', require: false
-end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
