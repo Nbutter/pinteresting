@@ -1,4 +1,15 @@
+<% if user_signed_in? %>
+
+<div class='jumbotron center'>
+	<h1>Awesome!</h1>
+	<p>You have arrived.</p>
+</div>
+
+<% else %>
+
 <div class='jumbotron center'>
 	<h1>Home Page Title</h1>
 	<p>Would be here...</p>
 </div>
+
+<% end %>
