@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
-# Use sqlite3 as the database for Active Record
+
+#adding devise for user accounts
+gem 'devise', '~>3.2.4'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -29,7 +31,7 @@ gem 'spring',        group: :development
 # including bootstrap per One Month Rails
 gem 'bootstrap-sass'
 
-#group for heroku dev and test
+#only use sqlite for dev and test
 group :development, :test do
 	gem 'sqlite3'
 end
